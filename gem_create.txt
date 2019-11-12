@@ -1,0 +1,26 @@
+[Gemの作成]
+
+1.作業ディレクトリを作成する。
+bundle gem (作成するGemの名前) -t
+
+2.gemspecファイルを修正する。
+TODOの項目を入力する。
+
+3.ライブラリの実装
+ライブラリのソースパス：libディレクトリ配下
+
+4.テストの実装
+テストのソースパス；specディレクトリ配下
+
+5.テストの実行
+bundle exec rake spec
+
+6.ビルド(Gemファイルの作成)
+bundle exec rake build
+
+7.別ライブラリから参照
+*.gemspecファイルを修正する。
+spec.add_dependency "作成したライブラリの名前(spec.name)"
+
+Gemfileを修正する。
+gem 'spec.name', :git => 'https://xxx.git'
