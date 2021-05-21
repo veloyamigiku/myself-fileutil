@@ -28,7 +28,7 @@ GEM
       ast (~> 2.4.1)
     racc (1.5.2)
     rainbow (3.0.0)
-    rake (10.5.0)
+    rake (13.0.3)
     regexp_parser (2.1.1)
     reverse_markdown (2.0.0)
       nokogiri
@@ -86,7 +86,7 @@ DEPENDENCIES
   bundler (~> 1.17)
   debase
   myself-fileutil!
-  rake (~> 10.0)
+  rake (~> 13.0)
   rspec (~> 3.0)
   rubocop
   ruby-debug-ide
